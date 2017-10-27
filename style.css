@@ -127,8 +127,9 @@ body {
     position: relative;
     margin: 0;
     height:100%;
-    padding-bottom: 6rem;
+    margin-bottom: 50px;
     min-height: 100%;
+
 }
 .row {
 
@@ -165,6 +166,7 @@ body {
 div.container {
     display:inline-block;
     padding-top: 30px;
+    padding-bottom: 100px;
 }
 
 
@@ -197,7 +199,7 @@ div.cartheader {
 
 
 .size{
-    float: right;
+   
     color: black;
     background-color: white;
     position: relative;
@@ -299,6 +301,7 @@ img.thumb{
 .list{
     margin-left: 90px;
     margin-right: 90px;
+    margin-bottom: 100px;
 
 }
 
@@ -332,14 +335,12 @@ img.thumb{
     /**figure out how to not hard**/
    /*width: 200px;*/
     display: inline;
-    vertical-align: top;
-
-  
+    vertical-align: top; 
 }
 
 
 
-/**styling the delete buton**/
+/**styling the delete button**/
 .delete{
     padding: 12px;
     margin-top: 30px;
@@ -360,7 +361,9 @@ img.thumb{
     text-decoration: underline;
 }
 
+/**footer stuff**/
 footer {
+    position: fixed;
    
     right: 0;
     bottom: 0;
@@ -375,13 +378,10 @@ footer {
 }
 
 .footersection {
-
-
     display: inline-block;
     position: relative;
     float: left;
     width:   55%;
-
 }
 
 .socialmedia {
@@ -390,8 +390,6 @@ footer {
     display: block;
     position: relative;
     float: right;
-    
-
 }
 
 .checkout {
@@ -403,9 +401,10 @@ footer {
     height: 40px;
     float: right;
     margin-top: 30px;
+    margin-bottom: 150px;
 }
 
-
+/**font awesome**/
 .fa {
     display: inline;
     position: relative;
@@ -416,26 +415,34 @@ footer {
     text-align: right;
 }
 
-.stickyfooter {
-    position: fixed;
+
+/**set images for color swatches**/
+#strawberry {
+    background: url('description/red.png')
+}
+
+#nightmoon {
+    background: url('description/yello.png')
+}
+
+#camouflage{
+    background: url('description/camo.png')
+}
+
+#crazyberry{
+    background: url('description/gradient.png')
+}
+#blackberry{
+    background: url('description/black.png')
+}
+
+#fireorange{
+    background: url('description/orange.png')
+
 }
 
 
-/**
 
-.wrapper {
-  min-height: 100%;
-  margin-bottom: -50px;
-}
-
-
-.footer,
-.push {
-  height: 50px;
-}
-
-
-**/
 
 
 

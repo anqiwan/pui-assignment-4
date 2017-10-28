@@ -96,9 +96,14 @@ $(document).ready(function() {
   
     //populate list with stored items
     var listItems = JSON.parse(localStorage.getItem("stored"));
+     if (listItems === null) {
+      // should only be first time, initiate new array
+      listItems = [];  
+    } 
 
     //iterate through the array and create a new entry for each CART item
     for (var i = 0; i < listItems.length; i++) {
+
 
       imgsource = listItems[i].photo;
       var elem = $("<div>", { "class": "element"});
@@ -134,6 +139,10 @@ $(document).ready(function() {
 
     //populate list with stored items
     var wishlistItems = JSON.parse(localStorage.getItem("wish"));
+
+   if (wishlistItems === null) {
+      wishlistItems = [];  
+    } 
 
     /////iterate through the array and create a new entry for each WISHLIST item
     for (var i = 0; i < wishlistItems.length; i++) {
